@@ -1,0 +1,15 @@
+<div class="baladya-container">
+    <h1 class="title">خدمات البلدية</h1>
+    <p class="subtitle">اختر الخدمة التي تحتاجها وقم بحجز تذكرة إلكترونية:</p>
+    
+    <div class="services-grid">
+      <!-- Service Cards -->
+      <div class="card" *ngFor="let service of baladyaServices">
+        <img [src]="service.imageUrl"  class="service-image" />
+        <h2 class="service-title">{{ service.name }}</h2>
+        <p class="service-description">{{ service.description }}</p>
+        <button class="reserve-button" (click)="reserveTicket(service.name)">حجز</button>
+      </div>
+    </div>
+  </div>
+  

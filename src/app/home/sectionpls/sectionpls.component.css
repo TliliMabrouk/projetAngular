@@ -1,0 +1,99 @@
+/* Global Styling for Landing Page */
+.landing-page {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Présentation du Service */
+  .presentation {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Fonctionnalités Clés */
+  .features {
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Avantages pour l'utilisateur */
+  .benefits {
+    margin-top: 3rem;
+  }
+  
+  .benefits h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .benefits ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .benefits ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0;
+    display: inline-block;
+    background-color: #fffafa;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    margin-left: 3rem;
+  
+  }
+  

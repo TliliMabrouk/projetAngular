@@ -1,0 +1,15 @@
+<div class="bank-container">
+    <h1 class="title">Réservez un Ticket Bancaire</h1>
+    <p class="subtitle">Choisissez un service bancaire parmi ceux proposés ci-dessous :</p>
+    
+    <div class="services-grid">
+      <!-- Service Cards -->
+      <div class="card" *ngFor="let service of bankServices">
+        <img [src]="service.imageUrl"  class="service-image" />
+        <h2 class="service-title">{{ service.name }}</h2>
+        <p class="service-description">{{ service.description }}</p>
+        <button class="reserve-button" (click)="reserveTicket(service.name)">Réserver</button>
+      </div>
+    </div>
+  </div>
+  

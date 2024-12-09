@@ -1,0 +1,15 @@
+<div class="pposte-container" >
+    <h1 class="title">Réservez un Ticket en Ligne</h1>
+    <p class="subtitle">Choisissez un service parmi ceux proposés ci-dessous :</p>
+    
+    <div class="services-grid">
+      
+      <div class="card" *ngFor="let service of services">
+        <img [src]="service.imageUrl"  class="service-image" />
+        <h2 class="service-title">{{ service.name }}</h2>
+        <p class="service-description">{{ service.description }}</p>
+        <button class="reserve-button" (click)="reserveTicket(service.name)" routerLink="/ticket-details">Réserver</button>
+      </div>
+    </div>
+  </div>
+  

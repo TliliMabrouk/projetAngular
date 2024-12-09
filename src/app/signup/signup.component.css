@@ -1,0 +1,102 @@
+/* Conteneur principal */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+    padding: 20px;
+  }
+  
+  /* Boîte d'inscription */
+  .signup-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Titres */
+  .signup-title {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+  }
+  
+  .signup-subtitle {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 30px;
+  }
+  
+  /* Formulaire */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #2563eb;
+  }
+  
+  /* Bouton */
+  .signup-button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #1e3a8a;
+  }
+  
+  /* Pied de page */
+  .signup-footer {
+    margin-top: 20px;
+  }
+  
+  .login-text {
+    font-size: 0.9rem;
+    color: #555555;
+  }
+  
+  .login-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  

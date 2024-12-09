@@ -1,0 +1,35 @@
+<div>
+    <div class="header-blue">
+        <img src="./assets/logo-doury.png" alt="Project Logo" class="navbar-brand-logo">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container">
+                
+                <a class="navbar-brand" routerLink="/home">Dawry</a>
+                
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul style="padding-left: 90px;" class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" routerLink="/pposte">Poste</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" routerLink="/Bank">Bank</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" routerLink="/Baladya">Baladya</a></li>
+                    </ul>
+                    <div class="ss ml-auto">
+                        <form action=""></form>
+
+                        <!-- Show login and sign up if not logged in -->
+                        <span class="navbar-text" *ngIf="!sharedService.connected">
+                            <a class="login" routerLink="/login">Log In</a>
+                        </span>
+                        <a *ngIf="!sharedService.connected" class="btn btn-light action-button" role="button" routerLink="/signup">Sign Up</a>
+
+                        <!-- Show logout button if logged in -->
+                        <button *ngIf="sharedService.connected" class="btn btn-light action-button" routerLink="/my account">My profile</button>
+                        <button *ngIf="sharedService.connected" class="btn btn-light action-button" (click)="logout()">Log Out</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
